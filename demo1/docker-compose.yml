@@ -1,0 +1,19 @@
+version: "3.0"
+
+services:
+  app:
+    image: nginx
+    ports:
+      - 80
+    deploy:
+      replicas: 3
+
+  db:
+    image: mysql:5.7
+    environment:
+      MYSQL_USER: mahendra
+      MYSQL_PASSWORD: password!223
+      MYSQL_ROOT_PASSWORD: pass!2345
+      MYSQL_DATABASE: sampledb
+    ports:
+      - 3306
