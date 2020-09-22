@@ -30,3 +30,6 @@
 
 5.  Notice the ports shown by last command (Usually  3XXXX) use it to connect Web 
     eg http://localhost:32676/ for NGINX
+
+
+6.  
