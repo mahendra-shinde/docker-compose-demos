@@ -1,0 +1,19 @@
+version: "3.0"
+
+networks:
+  net1:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: 20.10.0.0/16
+
+services:
+  app:
+    image: mahendrshinde/myweb
+    networks:
+      - net1
+    ports:
+      - 80
+    deploy:
+      replicas: 3
