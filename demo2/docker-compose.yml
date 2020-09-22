@@ -2,7 +2,6 @@ version: "3.0"
 
 networks:
   net1:
-    driver: bridge
     ipam:
       driver: default
       config:
@@ -17,3 +16,4 @@ services:
       - 80
     deploy:
       replicas: 3
+
