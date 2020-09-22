@@ -1,0 +1,1 @@
+2020/09/22 07:09:29 [emerg] 1#1: invalid number of arguments in "proxy_set_header" directive in /etc/nginx/proxy.conf:9
