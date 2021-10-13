@@ -108,4 +108,21 @@
     $ docker-compose down
     ```
 
-  
+## Deploy on Docker Swarm at Playground
+
+1.  Visit Docker Playground `https://labs.play-with-docker.com`
+2.  Login using Docker Credentials
+3.  Click "Start" button
+4.  Click the configure button and choose template `3 Managers & 2 workers`
+5.  In side terminal run following commands:
+
+  ```
+  $ git clone https://github.com/mahendra-shinde/docker-compose-demos
+  $ cd docker-compose-demos/demo2
+  $ docker-compose config
+  $ docker stack deploy app1 --compose-file docker-compose.yml
+  $ docker stack ls 
+  $ docker stack ps app1
+  ## Undeploy 
+  $ docker stack rm app1
+  ```
